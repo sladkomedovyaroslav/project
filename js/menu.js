@@ -1,6 +1,2 @@
-const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-
-burger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('open');
-});
+const burger=document.getElementById('burger');
+burger.onclick=()=>{};
