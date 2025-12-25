@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЖД билеты онлайн</title>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<header class="header">
+  <video class="header__video" autoplay muted loop>
+    <source src="assets/video.mp4" type="video/mp4">
+  </video>
+
+  <div class="header__overlay"></div>
+
+  <div class="header__content">
+    <div class="logo">ЖД-БИЛЕТЫ</div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="#">Поезда</a></li>
+        <li><a href="#">Расписание</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#">Поезда</a></li>
+    <li><a href="#">Расписание</a></li>
+    <li><a href="#" id="openForm">Найти билет</a></li>
+  </ul>
+</div>
+
+<main class="main">
+  <section class="section">
+    <h1>Железнодорожные билеты онлайн</h1>
+    <p>Поиск и бронирование билетов на поезда по всей стране</p>
+
+    <button class="btn" id="openModal">Найти билет</button>
+  </section>
+</main>
+
+<div class="modal" id="modal">
+  <div class="modal__content">
+    <button class="modal__close" id="closeModal">×</button>
+
+    <h2>Поиск билетов</h2>
+
+    <form id="contactForm">
+      <input type="text" name="from" placeholder="Откуда" required>
+      <input type="text" name="to" placeholder="Куда" required>
+      <input type="date" name="date" required>
+
+      <button class="btn" type="submit">Найти</button>
+      <p class="form__status" id="formStatus"></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>

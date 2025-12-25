@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .main {
+    padding: 40px 20px;
+  }
+}
